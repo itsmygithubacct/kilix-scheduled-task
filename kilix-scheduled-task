@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""kilix-scheduled-task launcher: runs from a checkout or an install tree as it is."""
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "src"))
+
+from kilix_scheduled_task.launch import prepare  # noqa: E402
+
+prepare()
+
+from kilix_scheduled_task.cli import main  # noqa: E402
+
+sys.exit(main())

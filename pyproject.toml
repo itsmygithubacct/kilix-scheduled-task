@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kilix-scheduled-task"
+version = "0.1.0"
+description = "Commands on a schedule: systemd user timers or cron behind a Kilix-native window, a character UI and a command line"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "kilix-scheduled-task contributors"}]
+# The window needs kilix-pane and kitty-input (pinned in third_party/ and
+# found at run time); the command line needs nothing beyond the standard
+# library.
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.scripts]
+kilix-scheduled-task = "kilix_scheduled_task.cli:main"
+
+[project.urls]
+Repository = "https://github.com/itsmygithubacct/kilix-scheduled-task.git"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
