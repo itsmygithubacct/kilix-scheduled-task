@@ -1,0 +1,12 @@
+[submodule "third_party/kilix-pane"]
+	path = third_party/kilix-pane
+	url = https://github.com/itsmygithubacct/kilix-pane.git
+[submodule "third_party/kitty-input"]
+	path = third_party/kitty-input
+	url = https://github.com/itsmygithubacct/kitty-input.git
+[submodule "third_party/soft-raster"]
+	path = third_party/soft-raster
+	url = https://github.com/itsmygithubacct/soft-raster.git
+[submodule "third_party/kitty-frame-presenter"]
+	path = third_party/kitty-frame-presenter
+	url = https://github.com/itsmygithubacct/kitty-frame-presenter.git
